@@ -6,7 +6,7 @@
 
 **Investigator:** Akashdip Mahapatra
 
-<img width="555" height="407" alt="image" src="https://github.com/user-attachments/assets/f24646ba-bf42-4923-a295-dbc438592c6b" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/f24646ba-bf42-4923-a295-dbc438592c6b" />
 
 ## 1. Context & Problem Statement
 
@@ -15,8 +15,8 @@ During my L2 Platform Support shift, the Datadog monitor `dev-mon-kafka-5-cpu-us
 * **The Symptom:** `broker_id:1` was consistently sustaining 70%–86% CPU utilization, hovering right around the 80% critical threshold. Meanwhile, `broker_id:2` and `broker_id:3` were healthy and idling at ~20% CPU.
 * **The Impact:** Constant P2 alert fatigue for the L3 team and degraded performance headroom on the primary DEV Kafka cluster.
 
-<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/278cce5f-9036-4fa5-9738-095a9767cd64" />
-<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/8212dd62-d087-4e5a-85d0-c986261905c5" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/278cce5f-9036-4fa5-9738-095a9767cd64" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/8212dd62-d087-4e5a-85d0-c986261905c5" />
 
 ---
 
@@ -36,8 +36,8 @@ To interact with the MSK cluster securely, I SSH'd into the designated EC2 basti
 
 Next, I needed the broker endpoints. I retrieved the [MSK v1](https://316022513217-oycl4cis.eu-west-1.console.aws.amazon.com/msk/home?region=eu-west-1#/cluster/arn%3Aaws%3Akafka%3Aeu-west-1%3A316022513217%3Acluster%2Fmsk-odin-dev-euwe1-01%2F52a91b72-22ab-4d85-966c-0035ce6f6ba7-3/view?tabId=metrics) cluster (`msk-odin-dev-euwe1-01`) bootstrap servers via the [AWS MSK Console](https://316022513217-oycl4cis.eu-west-1.console.aws.amazon.com/msk/home?region=eu-west-1#/cluster/arn%3Aaws%3Akafka%3Aeu-west-1%3A316022513217%3Acluster%2Fmsk-odin-dev-euwe1-01%2F52a91b72-22ab-4d85-966c-0035ce6f6ba7-3/viewClientInfo). Because the cluster enforces SASL/SCRAM authentication, I utilized port `9096`.
 
-<img width="1366" height="375" alt="image" src="https://github.com/user-attachments/assets/1f1b8c05-f91c-4245-b9bb-738c268b3136" />
-<img width="1366" height="270" alt="image" src="https://github.com/user-attachments/assets/916da6a8-dc0d-4164-82e6-e1eb3552a6b7" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/1f1b8c05-f91c-4245-b9bb-738c268b3136" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/916da6a8-dc0d-4164-82e6-e1eb3552a6b7" />
 
 
 ### Step 3.2: Retrieving Valid Authentication Credentials (The ECS Trick)
@@ -51,8 +51,8 @@ I navigated to the ECS Cluster `kc-ecs-odin-dev-euwe1-odin-kafka-connect-ecs-01`
 
 </br>
 
-<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/db6189a9-f4c8-4bf3-bbd8-add4e5f4bd00" />
-<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/08c6e01e-7eef-42fa-abc3-9f7768875d67" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/db6189a9-f4c8-4bf3-bbd8-add4e5f4bd00" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/08c6e01e-7eef-42fa-abc3-9f7768875d67" />
 
 ### Step 3.3: Creating an Isolated Configuration File
 
@@ -109,7 +109,7 @@ echo "Broker 3 Leaders:" && grep "Leader: 3" cluster_state.txt | wc -l
 
 </br>
 
-<img width="1366" height="469" alt="image" src="https://github.com/user-attachments/assets/5719385d-4a02-4ede-9b97-e78a15fda0a5" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/5719385d-4a02-4ede-9b97-e78a15fda0a5" />
 
 ---
 
@@ -121,7 +121,7 @@ If the *quantity* of partitions was equal, the issue had to be the *quality* of 
 
 *(Architecture Diagram: Visual representation of evenly distributed partitions, but showing thick data streams hitting only Broker 1)*
 
-<img width="983" height="350" alt="image" src="https://github.com/user-attachments/assets/97fe4e37-1ecd-4117-9558-686da12dfb1f" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/97fe4e37-1ecd-4117-9558-686da12dfb1f" />
 
 
 I pivoted back to Datadog Metrics Explorer and queried `aws.kafka.bytes_in_per_sec{environment:dev, broker_id:1}` grouped by `topic` to find the culprits.
@@ -133,7 +133,7 @@ I pivoted back to Datadog Metrics Explorer and queried `aws.kafka.bytes_in_per_s
 
 *(Datadog Screenshot: Top List showing `_consumer_offsets` dominating Broker 1 traffic)*  [*link*](https://britishairways.datadoghq.eu/metric/explorer?fromUser=false&graph_layout=multi&start=1778419452743&end=1778423052743&paused=false#N4Ig7glgJg5gpgFxALlAGwIYE8D2BXJVEADxQEYAaELcqyKBAC1pEbghkcLIF8qo4AMwgA7CAgg4RKUAiwAHOChASAtnADOcAE4RNIKtrgBHPJoQaUAbVBGN8qVoD6gnNtUZCKiOq279VKY6epbINiAiGOrKQdpYZAYgUJ4YThr42gDGSsgg6gi6mZaBZnHKGniqyBhgGgB0ANYYgk11AEZYCJpOok6K2mlwmcBwIgBuENpS6iIIyAJjFAAEbVMNOj1QyLwrWEvACDjyEJk8IDwAulSu7niYoeE3qncYMaXx51cgGnJoOaDyDB-BBdZRQHAwJyZe4aE6JNwCAYdZRjIFmYogNCiOBOOSKco4LFQRJYkQ4+hMZRME4Nc78CD2TBYXEKHKY7GfHh8b7yLEIADCUmEMBQIjuaB4QA)
 
-<img width="1366" height="617" alt="image" src="https://github.com/user-attachments/assets/90fc9eac-7d2b-4f85-944f-f1d2c6fd3af6" />
+<img width="100%" alt="image" src="https://github.com/user-attachments/assets/90fc9eac-7d2b-4f85-944f-f1d2c6fd3af6" />
 
 ---
 
