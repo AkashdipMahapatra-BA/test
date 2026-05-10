@@ -142,3 +142,6 @@ I pivoted back to Datadog Metrics Explorer and queried `aws.kafka.bytes_in_per_s
 The CPU skew on Broker 1 is an architectural consequence of how Kafka manages consumer groups.
 
 When a consumer group connects, Kafka hashes its `group.id` to assign it to one of the 50 partitions within the `_consumer_offsets` topic. This partition acts as the Group Coordinator. In the DEV environment, a highly active (and likely over-chatty) cluster of consumer groups hashed to partitions where Broker 1 happened to be the leader. Because these consumers are committing offsets 100+ times a second, Broker 1 is being overwhelmed by internal bookmarking traffic.
+
+<img width="1366" height="619" alt="Screenshot 2026-04-29 124303" src="https://github.com/user-attachments/assets/17dbe73d-0a1c-4f40-a7e9-7b3af3b22600" />
+<img width="1366" height="617" alt="Screenshot 2026-04-30 173009" src="https://github.com/user-attachments/assets/fbf6cdca-aff1-44b1-94ec-0e10eb037a2d" />
