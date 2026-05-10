@@ -15,10 +15,8 @@ During my L2 Platform Support shift, the Datadog monitor `dev-mon-kafka-5-cpu-us
 * **The Symptom:** `broker_id:1` was consistently sustaining 70%–86% CPU utilization, hovering right around the 80% critical threshold. Meanwhile, `broker_id:2` and `broker_id:3` were healthy and idling at ~20% CPU.
 * **The Impact:** Constant P2 alert fatigue for the L3 team and degraded performance headroom on the primary DEV Kafka cluster.
 
-<div style='display:flex; align-items:center; gap: 30px;' align='center'>
-    <a href="#"><img src="https://github.com/user-attachments/assets/f3813c50-3b0a-4eb0-908c-584288892be6" width="47%" /></a>
-    <a href="#"><img src="https://github.com/user-attachments/assets/8212dd62-d087-4e5a-85d0-c986261905c5" width="47%" /></a>
-</div>
+<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/278cce5f-9036-4fa5-9738-095a9767cd64" />
+<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/8212dd62-d087-4e5a-85d0-c986261905c5" />
 
 ---
 
@@ -53,10 +51,8 @@ I navigated to the ECS Cluster `kc-ecs-odin-dev-euwe1-odin-kafka-connect-ecs-01`
 
 </br>
 
-<div style='display:flex; align-items:center; gap: 30px;' align='center'>
-    <a href="#"><img src="https://github.com/user-attachments/assets/db6189a9-f4c8-4bf3-bbd8-add4e5f4bd00" width="47%" /></a>
-    <a href="#"><img src="https://github.com/user-attachments/assets/08c6e01e-7eef-42fa-abc3-9f7768875d67" width="47%" /></a>
-</div>
+<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/db6189a9-f4c8-4bf3-bbd8-add4e5f4bd00" />
+<img width="1366" height="626" alt="image" src="https://github.com/user-attachments/assets/08c6e01e-7eef-42fa-abc3-9f7768875d67" />
 
 ### Step 3.3: Creating an Isolated Configuration File
 
