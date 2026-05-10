@@ -6,7 +6,7 @@
 
 **Investigator:** Akashdip Mahapatra
 
-<img width="100%" alt="image" src="https://github.com/user-attachments/assets/f24646ba-bf42-4923-a295-dbc438592c6b" />
+<img width="555" height="407" alt="image" src="https://github.com/user-attachments/assets/f24646ba-bf42-4923-a295-dbc438592c6b" />
 
 ## 1. Context & Problem Statement
 
