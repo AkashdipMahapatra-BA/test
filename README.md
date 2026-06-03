@@ -1,7 +1,6 @@
 <img width="1358" height="11740" alt="screencapture-britishairways-atlassian-net-wiki-spaces-IO-pages-1021838033-Automate-Validation-Checklist-2026-06-03-14_57_14" src="https://github.com/user-attachments/assets/c2939594-2ed3-4aec-bafe-c680ef721063" />
 <img width="1358" height="2355" alt="screencapture-britishairways-datadoghq-eu-dashboard-npg-44j-ka4-2026-06-03-14_58_41" src="https://github.com/user-attachments/assets/b69ca958-fd71-418d-a824-64cd1152e865" />
 <img width="1358" height="10628" alt="screencapture-britishairways-datadoghq-eu-notebook-311211-enterprise-deployment-validation-architecture-2026-06-03-14_57_54" src="https://github.com/user-attachments/assets/c4018b22-f9ea-4039-8cc1-bf56a26e1a64" />
-<img width="1358" height="2029" alt="screencapture-github-BritishAirways-Ent-ops-odie-datapipeline-aircraft-towing-pull-92-changes-2026-06-03-09_07_54" src="https://github.com/user-attachments/assets/201f1f90-fee0-4757-b666-af051eb2aba5" />
 
 ```
 Skip to:
