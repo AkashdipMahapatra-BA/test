@@ -16,3 +16,5 @@ graph TD
     J -->|Markdown| K[GitHub Step Summary UI]
 ```
 <img width="774" height="611" alt="image" src="https://github.com/user-attachments/assets/f5bb1ef6-376a-4ff0-8543-e1738038fe6c" />
+<img width="1366" height="621" alt="image" src="https://github.com/user-attachments/assets/5cd2bec5-671f-4bd3-afa6-a346ea8cf270" />
+
