@@ -15,3 +15,4 @@ graph TD
     I -->|Raw Data Objects| J[report_formatter.py]
     J -->|Markdown| K[GitHub Step Summary UI]
 ```
+<img width="774" height="611" alt="image" src="https://github.com/user-attachments/assets/f5bb1ef6-376a-4ff0-8543-e1738038fe6c" />
