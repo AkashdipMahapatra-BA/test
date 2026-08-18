@@ -1,4 +1,4 @@
-<img width="1366" height="567" alt="image" src="https://github.com/user-attachments/assets/366b153c-7f10-4561-b526-22fa5886720d" />
-
-<img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/f9fccafc-d928-4534-9eee-bca135b32aef" />
-<img width="1366" height="615" alt="image" src="https://github.com/user-attachments/assets/516e59dc-674c-40a7-a9c2-79dd4577243d" />
+<img width="1358" height="1372" alt="screencapture-britishairways-datadoghq-eu-dashboard-9cb-ipn-kaw-2026-08-18-15_39_21" src="https://github.com/user-attachments/assets/1794bcd9-4472-42ec-b075-07b2317fa01a" />
+<img width="1358" height="1531" alt="screencapture-eu-west-1-console-aws-amazon-ecs-v2-clusters-kc-ecs-odin-uat-euwe1-odin-kafka-connect-ecs-01-tasks-2026-08-18-15_40_10" src="https://github.com/user-attachments/assets/9e7660d7-c2db-4421-bf9c-2340095a4d14" />
+<img width="1358" height="2389" alt="screencapture-eu-west-1-console-aws-amazon-ecs-v2-clusters-kc-ecs-odin-uat-euwe1-odin-kafka-connect-ecs-01-services-2026-08-18-15_39_45" src="https://github.com/user-attachments/assets/485f28bc-ad6f-4a2c-b4c3-bebf5cb97582" />
+<img width="1358" height="1355" alt="screencapture-eu-west-1-console-aws-amazon-ecs-v2-clusters-kc-ecs-odin-uat-euwe1-odin-kafka-connect-ecs-01-clusterMetrics-2026-08-18-15_41_13" src="https://github.com/user-attachments/assets/78131ccc-487f-408b-85ec-fd19fdb46ba8" />
